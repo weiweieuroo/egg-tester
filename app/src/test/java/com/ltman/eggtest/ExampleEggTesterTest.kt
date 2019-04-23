@@ -6,12 +6,12 @@ import org.junit.Test
 class ExampleEggTesterTest: BaseEggTesterTestBench() {
 
     @Test
-    fun checkTesterCorrectness() {
+    fun correctnessTest() {
         correctnessTestBench(100) { ExampleEggTester() }
     }
 
     @Test
-    fun checkTesterPerformance() {
+    fun performanceTest() {
         val performance = performanceTestBench(100) { ExampleEggTester() }
         print("Total test count: $performance")
     }
